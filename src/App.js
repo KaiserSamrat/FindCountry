@@ -1,6 +1,5 @@
 import Header from "./containers/Header"
-import FoodList from "./containers/CountryList"
-import FoodDetails from "./containers/CountryDetails";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,6 +7,7 @@ import {
 } from "react-router-dom";
 import CountryDetails from "./containers/CountryDetails"
 import CountryList from "./containers/CountryList";
+import NotFound from './containers/NotFound';
 
 
 function App() {
@@ -22,6 +22,9 @@ function App() {
           <Route path='/country/:countryName'>
           <CountryDetails/>
 
+          </Route>
+          <Route path="*">
+            <NotFound/>
           </Route>
         </Switch>
 
