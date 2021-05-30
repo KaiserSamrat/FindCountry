@@ -1,15 +1,15 @@
 import {ActionTypes} from "../constants/action"
-export const setFoods = (foods) =>{
+export const setCountries = (countries) =>{
 return {
-    type: ActionTypes.SET_FOODS,
-    payload: foods,
+    type: ActionTypes.SET_COUNTRIES ,
+    payload: countries,
 }
 
 }
-export const selectFood = (food) =>{
+export const selectCountry = (country) =>{
     return {
-        type: ActionTypes.SELECTED_PRODUCT,
-        payload: foods,
+        type: ActionTypes.SELECTED_COUNTRIES,
+        payload: country,
     }
     
     }
