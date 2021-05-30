@@ -19,7 +19,7 @@ function App() {
           <Route exact path='/' >
             <CountryList />
           </Route>
-          <Route path='/food/:countryName'>
+          <Route path='/country/:countryName'>
           <CountryDetails/>
 
           </Route>

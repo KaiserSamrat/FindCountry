@@ -11,7 +11,7 @@ export const countryReducer = (state = intialState, { type, payload }) =>
           return state;
       }
 };
-export const selectedFoodsReducer = (state = {}, { type, payload }) => {
+export const selectedCountryReducer = (state = {}, { type, payload }) => {
     console.log(type);
     switch (type) {
       case ActionTypes.SELECTED_COUNTRIES:
